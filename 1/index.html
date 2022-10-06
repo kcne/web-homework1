@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Project 1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin:0;
+        }
+        .container{
+            background-color: silver;
+            width:400px;
+            height:300px;
+            padding:10px;
+            margin:auto;
+            margin-top:20px;
+            height:120%;
+            padding-bottom:15px;
+            border-radius:4px;      
+        }
+        .container h1{
+            display:block;
+            text-align: center;
+            margin:auto;
+        }
+        .buttons{
+            display:inline-block;
+            width:100%;
+            text-align:center;
+            margin-top:25px;
+        }
+        .icons{
+            width:40px;
+            height: 40px;
+            border-radius: 50%;
+            border:1px blue solid;
+            background-color: white;
+            color:blue;
+        }
+        .input-fields{
+            margin-top:40px;
+        }
+        .input-fields{
+            margin-bottom:35px;
+        }
+        .input{
+            display:block;
+            margin:auto;
+            width:100%;
+            height:35px;
+            border-radius:4px;
+            margin-top:15px;
+            border:none;
+            padding-left: 10px;
+        }
+        .input:hover{
+            border:none;
+        }
+        .submit{
+            display:block;
+            height: 35px;
+            width:100%;
+            background-color: lime;
+            border:1px black solid;
+            border-radius: 4px;
+            margin-top:20px;
+        }
+        .google{
+            color:red;
+            border-color: red;
+        }
+        button:hover{
+            background-color: #008000;
+            color:white;
+            cursor:pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <div class="buttons">
+            <button class="google icons">G</button>
+            <button class="icons">f</button>
+            <button class="icons">In</button>
+        </div>
+        <div class="input-fields">
+            <input type="text" class="input" placeholder="Your email">
+            <input type="text" class="input" placeholder="Password">
+        </div>
+        <button type="submit" class="submit">Submit</button>
+    </div>
+    
+</body> 
+</html>
