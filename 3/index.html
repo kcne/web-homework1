@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding: 0;
+        }
+        .container{
+            width:75%;
+            background-color: silver;
+            margin:auto;
+        }
+        .card{
+            margin-top:20px;
+            display:flex;
+            justify-content: space-between;
+            align-items: top;
+        }
+        .card-content{
+            padding:10px;
+            border-left:1px;
+            width: 50%;
+            height: 50%;
+        }
+        .card img{
+            width:50%;
+            height: 45%;
+        }
+        .card p{
+            font-size: 17px;
+        }
+        .card p,h2,h3{
+            margin-top: 15px;
+            padding-left:5px;
+            
+        }
+        .card h1{
+            font-size:17px; 
+            margin-bottom: 35px;
+            border:none;
+            display:inline;
+        }
+        .blue-border{
+            border-left:5px blue solid;
+        }
+        .green-border{
+            border-left:5px green solid;
+        }
+        .height-20px{
+            height:40px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <img src="arduino.jpg">
+        <div class="card-content">
+            <h1>Orijinal Arduino Uno Mini - Limited Edition </h1>
+            <p class="blue-border height-20px">Marka/Mensei: <span> Arduino </span></p>
+            <p class="green-border height-20px">Stok Kodu: 20530</p>
+            <p class="blue-border height-20px" >765,66 TL + KDV</p>
+            <h2 class="green-border">903,48 TL KDV Dahil</h2>
+            <div class="buy-section blue-border"><button class="item-num"></button><button class="item-num"></button><button class="item-num"></button><button class="add-to-card"></button></div>
+            <h3 class="blue-border">* Alisveris Listeme Ekle </h3>
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>
