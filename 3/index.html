@@ -35,6 +35,7 @@
         }
         .card p{
             font-size: 17px;
+            padding:5px 10px;
         }
         .card p,h2,h3{
             margin-top: 15px;
@@ -47,15 +48,38 @@
             border:none;
             display:inline;
         }
-        .blue-border{
+        .card-content-text:nth-child(odd){
             border-left:5px blue solid;
         }
-        .green-border{
+        .card-content-text:nth-child(even){
             border-left:5px green solid;
         }
-        .height-20px{
-            height:40px;
+        .buy-section {
+            margin-top: 15px;
+            display:flex;
+            justify-content: flex-start;
+            padding-left: 10px;
         }
+        .item-num{
+            width: 40px;
+            height: 40px;
+            background-color:silver;
+            border: 1px blue solid;
+            font-size: 25px;
+        }
+        .add-to-card{
+            background-color: green;
+            border:none;
+            margin-left:20px;
+            padding:5px 20px;
+            height: 40px;
+            color:white;
+            font-size: 25px;
+        }
+        .height-30{
+            height:30px;
+        }
+    
     </style>
 </head>
 <body>
@@ -63,13 +87,14 @@
     <div class="card">
         <img src="arduino.jpg">
         <div class="card-content">
+            
             <h1>Orijinal Arduino Uno Mini - Limited Edition </h1>
-            <p class="blue-border height-20px">Marka/Mensei: <span> Arduino </span></p>
-            <p class="green-border height-20px">Stok Kodu: 20530</p>
-            <p class="blue-border height-20px" >765,66 TL + KDV</p>
-            <h2 class="green-border">903,48 TL KDV Dahil</h2>
-            <div class="buy-section blue-border"><button class="item-num"></button><button class="item-num"></button><button class="item-num"></button><button class="add-to-card"></button></div>
-            <h3 class="blue-border">* Alisveris Listeme Ekle </h3>
+            <div class="card-content-text height-30"><p>Marka/Mensei: <span> Arduino </span></p></div>
+            <div class="card-content-text"><p>Stok Kodu: 20530</p></div>
+            <div class="card-content-text"><p>765,66 TL + KDV</p></div> 
+            <div class="card-content-text"><h2>903,48 TL KDV Dahil</h2></div>
+            <div class="card-content-text buy-section"><button class="item-num">-</button><button class="item-num">1</button><button class="item-num">+</button><button class="add-to-card">Sepete Ekle</button></div>
+            <div class="card-content-text"><h3> * Alisveris Listeme Ekle </h3></div>
         </div>
     </div>
 </div>
