@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    
+}
+.card{ 
+    width:45%;
+    box-shadow: rgba(0, 0, 0, 0.50) 5px 3px 5px;
+    border-radius: 5px;
+    background-color: white;
+    height: 290px;
+    position:relative;
+}
+
+.container{
+    background-color: silver;
+    width:75%;
+    margin:auto;
+    padding-top:20px;
+    padding-bottom:50px;
+}
+.container h1{
+    text-align: center;
+}
+.container img{
+    height:230px;
+    width:100%;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.clock-icon{
+    display:inline;
+    max-height: 25px;
+    max-width: 25px;
+}
+.text-content{
+    padding:5px 10px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.card button{
+    height:30px;
+    padding:0 13px;
+}
+
+.time-label{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background-color:silver;
+    border-radius:15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:5px 8px;
+    gap:3px;
+    opacity: 85%;
+}
+.card-container{
+    padding-top:20px;
+    display:flex;
+    justify-content: space-around;
+}
+.card-container p{
+    font-size: 13px;
+    padding-top: 3px;
+    color: darkgray;
+}
+.time-label p{
+    color:black;
+}
+.card button{
+    color:#787DFB;
+    border:1px #787DFB solid;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+.card button:hover{
+    color:white;
+    cursor:pointer;
+    background-color: green;
+    border:none;
+}
