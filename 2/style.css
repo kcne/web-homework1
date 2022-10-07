@@ -82,5 +82,6 @@
     color:white;
     cursor:pointer;
     background-color: green;
+    border:1px green solid;
     border:none;
 }

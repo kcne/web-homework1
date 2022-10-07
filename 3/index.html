@@ -14,10 +14,11 @@
         }
         .container{
             width:75%;
-            background-color: silver;
+            
             margin:auto;
         }
         .card{
+            background-color: silver;
             margin-top:20px;
             display:flex;
             justify-content: space-between;
@@ -27,24 +28,22 @@
             padding:10px;
             border-left:1px;
             width: 50%;
-            height: 50%;
+            max-height: 100%;
         }
         .card img{
             width:50%;
             height: 45%;
         }
         .card p{
-            font-size: 17px;
-            padding:5px 10px;
+            font-size: 26px;
+            
         }
         .card p,h2,h3{
-            margin-top: 15px;
-            padding-left:5px;
+            padding-left:10px;
             
         }
         .card h1{
-            font-size:17px; 
-            margin-bottom: 35px;
+            font-size:25px; 
             border:none;
             display:inline;
         }
@@ -55,7 +54,6 @@
             border-left:5px green solid;
         }
         .buy-section {
-            margin-top: 15px;
             display:flex;
             justify-content: flex-start;
             padding-left: 10px;
@@ -76,10 +74,75 @@
             color:white;
             font-size: 25px;
         }
+        .add-to-card:hover{
+            background-color: blue;
+            cursor: pointer;
+
+        }
         .height-30{
             height:30px;
         }
-    
+        .card-content h2{
+        color:aqua;
+        font-size:40px;
+        }
+        .card-content span{
+        color:blue;
+        }
+        .card-content h3{
+            color:blue;
+            font-size:28px;
+        }
+        .flex-block-container{
+            display:flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-content: center;
+            height:100%;
+            min-height: 100%;
+
+        }
+        .details{
+            margin-top:20px;;
+        }
+        .details ul{
+            padding-left:15px;
+            margin-top:10px;
+        }
+        .details li{
+            padding-top:5px;
+        }
+        .specs{
+            margin-top:20px;
+        }
+
+        .specs table{
+            margin-top: 15px;
+            width:100%;
+            border-collapse: collapse;
+            
+        }
+        .specs table tr:nth-child(odd){
+            background-color: silver;
+        }
+        .specs th{
+            text-align: left;
+        }
+        .specs tr{
+            height:30px;
+        }
+        .specs th,td{
+            padding-left:5px;
+        }
+        .specs table tr:hover{
+            background-color: gray;
+            color:white;
+            
+        }
+        .heading{
+            padding-left:0;
+            color:aqua;
+        }
     </style>
 </head>
 <body>
@@ -87,16 +150,54 @@
     <div class="card">
         <img src="arduino.jpg">
         <div class="card-content">
-            
-            <h1>Orijinal Arduino Uno Mini - Limited Edition </h1>
-            <div class="card-content-text height-30"><p>Marka/Mensei: <span> Arduino </span></p></div>
-            <div class="card-content-text"><p>Stok Kodu: 20530</p></div>
-            <div class="card-content-text"><p>765,66 TL + KDV</p></div> 
-            <div class="card-content-text"><h2>903,48 TL KDV Dahil</h2></div>
-            <div class="card-content-text buy-section"><button class="item-num">-</button><button class="item-num">1</button><button class="item-num">+</button><button class="add-to-card">Sepete Ekle</button></div>
-            <div class="card-content-text"><h3> * Alisveris Listeme Ekle </h3></div>
+                <div class="flex-block-container">
+                <h1>Orijinal Arduino Uno Mini - Limited Edition </h1>
+                <div class="card-content-text"><p>Marka/Mensei: <span> Arduino </span></p></div>
+                <div class="card-content-text"><p>Stok Kodu: 20530</p></div>
+                <div class="card-content-text"><p>765,66 TL + KDV</p></div> 
+                <div class="card-content-text"><h2>903,48 TL KDV Dahil</h2></div>
+                <div class="card-content-text buy-section"><button class="item-num">-</button><button class="item-num">1</button><button class="item-num">+</button><button class="add-to-card">Sepete Ekle</button></div>
+                <div class="card-content-text"><h3> * Alisveris Listeme Ekle </h3></div>
+            </div>
         </div>
     </div>
+    <section class="details">
+        <h2 class="heading"> Orijinal Arduino Uno Mini Ozellikler</h2>
+        <hr>
+        <ul>
+            <li>6 adet PWM çıkışı sağlayan 14 dijital I/O pini</li>
+            <li>6 analog giriş pini</li>
+            <li>16MHz seramik rezonatör</li>
+            <li>USB-C bağlantı noktası</li>
+            <li>USB veya harici bir güç kaynağı ile çalışır</li>
+            <li>Yeniden başlatma tuşu</li>
+            <li>Anahtar bileşenler</li>
+            <li>Mikroçip Teknolojisi ATmega328 MCU</li>
+            <li>USB Denetleyicili Mikroçip Teknolojisi ATmega16U2 MCU</li>
+        </ul>
+    </section>
+    <section class="specs">
+        <h2 class="heading"> Teknik Ozellikler</h2>
+        <hr>
+        <table>
+            <tr>
+              <th>Company</th>
+              <th>Contact</th>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+            </tr>
+            <tr>
+              <td>Centro  Moctezuma</td>
+              <td>Francisco Chang</td>
+            </tr>
+            <tr>
+                <td>Centro  Moctezuma</td>
+                <td>Francisco Chang</td>
+              </tr>
+          </table> 
+    </section>
 </div>
     
 </body>
