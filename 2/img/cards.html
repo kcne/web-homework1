@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        * {
+        box-sizing: border-box;
+        margin:0;
+        padding:0;
+        }
+        .card{ 
+            width:45%;
+            box-shadow: rgba(0, 0, 0, 0.50) 5px 3px 5px;
+            border-radius: 5px;
+            background-color: white;
+            height: 290px;
+            position:relative;
+        }
+
+        .container{
+            background-color: silver;
+            width:75%;
+            margin:auto;
+            padding-top:20px;
+            padding-bottom:50px;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container img{
+            height:230px;
+            width:100%;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+        .clock-icon{
+            display:inline;
+            max-height: 25px;
+            max-width: 25px;
+        }
+        .text-content{
+            padding:5px 10px;
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
+        }
+        .card button{
+            height:30px;
+            padding:0 13px;
+        }
+        .time-label{
+            position:absolute;
+            top:15px;
+            left:15px;
+            background-color:silver;
+            border-radius:15px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            padding:5px 8px;
+            gap:3px;
+            opacity: 85%;
+        }
+        .card-container{
+            padding-top:20px;
+            display:flex;
+            justify-content: space-around;
+        }
+        .card-container p{
+            font-size: 13px;
+            padding-top: 3px;
+            color: darkgray;
+        }
+        .time-label p{
+            color:black;
+        }
+        .card button{
+            color:#787DFB;
+            border:1px #787DFB solid;
+            border-radius: 5px;
+            background-color: aliceblue;
+        }
+        .card button:hover{
+            color:white;
+            cursor:pointer;
+            background-color: green;
+            border:1px green solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Recipes</h1>
+        <div class="card-container">
+            <div class="card">
+                <img src="img/stew.jpg" alt=""> <div class="time-label"><i class="material-icons">access_time</i><p> 40 MINS</p></div>
+                <div class="text-content">
+                    <div>
+                        <h4>5 Bean Chilli Stew</h4>
+                        <p>Recype by Mehmet</p>
+                    </div>
+                    <button>Details</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/curry.jpg" alt=""> <div class="time-label"><i class="material-icons">access_time</i><p> 25 MINS</p></div>
+                <div class="text-content">
+                    <div>
+                        <h4>5 Bean Chilli Stew</h4>
+                        <p>Recype by Ayse</p>
+                    </div>
+                    <button>Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

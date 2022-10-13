@@ -18,7 +18,7 @@
             margin:auto;
         }
         .card{
-            background-color: silver;
+            background-color: #f4f4f4;
             margin-top:20px;
             display:flex;
             justify-content: space-between;
@@ -75,7 +75,7 @@
             font-size: 25px;
         }
         .add-to-card:hover{
-            background-color: blue;
+            background-color: #22b6fc;
             cursor: pointer;
 
         }
@@ -83,14 +83,14 @@
             height:30px;
         }
         .card-content h2{
-        color:aqua;
+        color:#22b6fc;
         font-size:40px;
         }
         .card-content span{
-        color:blue;
+        color:#22b6fc;
         }
         .card-content h3{
-            color:blue;
+            color:#008000;
             font-size:28px;
         }
         .flex-block-container{
@@ -100,6 +100,7 @@
             align-content: center;
             height:100%;
             min-height: 100%;
+            
 
         }
         .details{
@@ -120,19 +121,23 @@
             margin-top: 15px;
             width:100%;
             border-collapse: collapse;
+            border:1px rgb(179, 179, 179) solid;
             
         }
         .specs table tr:nth-child(odd){
-            background-color: silver;
+            background-color: #f4f4f4;
         }
         .specs th{
             text-align: left;
+            border:1px rgb(179, 179, 179) solid;
         }
         .specs tr{
             height:30px;
+            border:1px rgb(179, 179, 179) solid;
         }
         .specs th,td{
             padding-left:5px;
+            border:1px rgb(179, 179, 179) solid;
         }
         .specs table tr:hover{
             background-color: gray;
@@ -141,7 +146,10 @@
         }
         .heading{
             padding-left:0;
-            color:aqua;
+            color:#0d529b;
+        }
+        .specs{
+            margin-bottom: 30px;
         }
     </style>
 </head>
@@ -181,21 +189,25 @@
         <hr>
         <table>
             <tr>
-              <th>Company</th>
-              <th>Contact</th>
+              <th>Üretici Firma</th>
+              <th>Arduino</th>
             </tr>
             <tr>
-              <td>Alfreds Futterkiste</td>
-              <td>Maria Anders</td>
+              <td>SRAM</td>
+              <td>2KB</td>
             </tr>
             <tr>
-              <td>Centro  Moctezuma</td>
-              <td>Francisco Chang</td>
+              <td>Ürün Boyutları</td>
+              <td>10.9 x 9.09 x 5 cm</td>
             </tr>
             <tr>
-                <td>Centro  Moctezuma</td>
-                <td>Francisco Chang</td>
-              </tr>
+                <td>Ürün Ağırlığı</td>
+                <td>73.6 g</td>
+            </tr>
+            <tr>
+                <td>EEPROM</td>
+                <td>1KB</td>
+            </tr>
           </table> 
     </section>
 </div>
